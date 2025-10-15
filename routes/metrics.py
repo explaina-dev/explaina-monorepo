@@ -1,8 +1,5 @@
-from fastapi import APIRouter
-from services.metrics import dump
-
+﻿from fastapi import APIRouter
 router = APIRouter(prefix="/api", tags=["metrics"])
-
 @router.get("/metrics")
-async def get_metrics():
-    return dump()
+def metrics_api():
+    return {"counters": {}}
