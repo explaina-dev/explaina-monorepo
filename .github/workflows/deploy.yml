@@ -1,4 +1,4 @@
-﻿name: Deploy Explaina Backend to Azure Web App
+name: Deploy Explaina Backend (API + SPA) to Azure
 
 on:
   push:
@@ -6,31 +6,33 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-
-      - name: Install dependencies
-        run: |
+      - run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # (Optional) quick syntax check
-      - name: Lint (basic)
-        run: python -m py_compile $(git ls-files "*.py")
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Build frontend
+        working-directory: frontend
+        run: |
+          npm ci
+          npm run build
+          mkdir -p ../www
+          cp -r dist/* ../www/
 
       - name: Zip package
         run: |
-          zip -r package.zip . -x "*.git*"
-
+          zip -r package.zip . -x "*.git*" "frontend/node_modules/*"
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
         with:
