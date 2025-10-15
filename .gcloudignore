@@ -1,0 +1,6 @@
+.venv/
+worker.venv/
+.deploy_pkg/
+explaina.deploy.zip
+__pycache__/
+*.pyc

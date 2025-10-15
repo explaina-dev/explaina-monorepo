@@ -1,0 +1,7 @@
+:root{--bg:#0f1836;--panel:#13214a;--text:#eaf2ff;--border:#27407a}
+body{background:#0f1836;color:#eaf2ff;font-family:"Noto Sans",system-ui,Arial,sans-serif;margin:0}
+.card{background:#13214a;border:1px solid #27407a;border-radius:16px;padding:16px}
+.inp{width:100%;min-height:80px;padding:10px;border-radius:10px;border:1px solid var(--border);background:#152a5a;color:#fff}
+.btn{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:#1a356e;color:#fff;cursor:pointer}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.badge{opacity:.85;font-size:13px}

@@ -1,0 +1,6 @@
+<step title="Incoming Request" date="2025-10-06T21:50:21.082" instance="6ac9bf" url="/logstream" method="GET" type="request" pid="770,1,19" Host="explaina-backend.scm.azurewebsites.net" User-Agent="AZURECLI/2.77.0 (MSI)" Accept-Encoding="identity" Authorization="Bea..." x-ms-client-request-id="564d92ca-a2fe-11f0-9d0a-97ccbfbf3692" X-ARR-LOG-ID="564d92ca-a2fe-11f0-9d0a-97ccbfbf3692" CLIENT-IP="41.143.149.193:51941" X-SITE-DEPLOYMENT-ID="explaina-backend" WAS-DEFAULT-HOSTNAME="explaina-backend.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/logstream" X-Client-IP="41.143.149.193" X-Client-Port="51941" >
+  <step title="Cleanup Xml Logs" date="2025-10-06T21:50:21.093" /><!-- duration: 10ms -->
+  <step title="LogStreamHandlerMiddleware.Invoke" date="2025-10-06T21:50:21.142" /><!-- duration: 608ms -->
+  <step title="Error occurred" date="2025-10-06T21:54:21.755" type="error" text="LogStreamManager: ProcessRequest end" /><!-- duration: 26ms -->
+  <step title="Outgoing response" date="2025-10-06T21:54:21.830" type="response" statusCode="200" statusText="OK" /><!-- duration: 8ms -->
+</step><!-- duration: 240763ms -->
