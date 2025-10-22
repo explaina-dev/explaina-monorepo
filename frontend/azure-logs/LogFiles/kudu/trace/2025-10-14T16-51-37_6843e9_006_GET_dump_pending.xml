@@ -1,0 +1,4 @@
+<step title="Incoming Request" date="2025-10-14T16:51:37.664" instance="6843e9" url="/dump" method="GET" type="request" pid="768,1,23" Host="explaina-backend.scm.azurewebsites.net" User-Agent="AZURECLI/2.77.0 (MSI)" Accept-Encoding="identity" Authorization="Bea..." x-ms-client-request-id="0a615083-a91e-11f0-a7f9-bf3e5feaacf1" X-ARR-LOG-ID="0a615083-a91e-11f0-a7f9-bf3e5feaacf1" CLIENT-IP="196.206.124.15:52856" X-SITE-DEPLOYMENT-ID="explaina-backend" WAS-DEFAULT-HOSTNAME="explaina-backend.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/dump" X-Client-IP="196.206.124.15" X-Client-Port="52856" >
+  <step title="Cleanup Xml Logs" date="2025-10-14T16:51:37.667" >
+    <step title="Cleanup Infos" date="2025-10-14T16:51:37.679" totalFiles="271" totalCleanup="111" /><!-- duration: 11ms -->
+  </step><!-- duration: 26ms -->

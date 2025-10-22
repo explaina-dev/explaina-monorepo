@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://explaina-64185.web.app/sitemap.xml

@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+gunicorn
+httpx
+python-multipart
+aiofiles
+google-generativeai
+google-cloud-storage
+structlog
