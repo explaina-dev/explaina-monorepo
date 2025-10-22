@@ -1,7 +1,7 @@
 {
-<<<<<<< HEAD
   "name": "explaina-frontend",
   "version": "1.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -19,19 +19,5 @@
     "@vitejs/plugin-react": "^4.3.1",
     "typescript": "^5.5.3",
     "vite": "^5.4.1"
-=======
-  "name": "explaina",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "sass": "^1.93.2"
->>>>>>> b3697f3bc63af1540f664096ed13d4233864b892
   }
 }
