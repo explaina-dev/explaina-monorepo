@@ -1,4 +1,13 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://explaina-64185.web.app/sitemap.xml
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: Google-Display-Ads-Bot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+Sitemap: https://www.explaina.net/sitemap.xml
