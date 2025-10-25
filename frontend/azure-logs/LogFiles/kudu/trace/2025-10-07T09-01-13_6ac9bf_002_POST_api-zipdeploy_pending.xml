@@ -1,0 +1,18 @@
+<step title="Incoming Request" date="2025-10-07T09:01:13.600" instance="6ac9bf" url="/api/zipdeploy?isAsync=true" method="POST" type="request" pid="770,1,5" Accept="*/*" Host="explaina-backend.scm.azurewebsites.net" User-Agent="AZURECLI/2.77.0 (MSI)" Accept-Encoding="gzip, deflate" Authorization="Bea..." Cache-Control="no-cache" Content-Type="application/octet-stream" Content-Length="38590" x-ms-client-request-id="29385a6d-a35c-11f0-8d49-97ccbfbf3692" x-ms-artifact-checksum="9ac93f555225edf2e347c5fdf07459494a274a54c30657b1fd08cb4238105b99" X-ARR-LOG-ID="29385a6d-a35c-11f0-8d49-97ccbfbf3692" CLIENT-IP="41.143.149.193:57433" X-SITE-DEPLOYMENT-ID="explaina-backend" WAS-DEFAULT-HOSTNAME="explaina-backend.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/api/zipdeploy?isAsync=true" X-Client-IP="41.143.149.193" X-Client-Port="57433" >
+  <step title="ZipPushDeploy" date="2025-10-07T09:01:14.501" >
+    <step title="ZipDeploy. Extract zip. Remote build." date="2025-10-07T09:01:14.514" /><!-- duration: 2ms -->
+    <step title="None repository commit" date="2025-10-07T09:01:14.526" >
+      <step title="Commit id: 2540793e-3f8b-4acd-9fe4-b1400595cdb1" date="2025-10-07T09:01:14.528" Message="N/A" AuthorName="N/A" AuthorEmail="N/A" /><!-- duration: 2ms -->
+    </step><!-- duration: 6ms -->
+    <step title="Starting PushDeployAsync" date="2025-10-07T09:01:14.534" /><!-- duration: 2ms -->
+    <step title="Writing artifact to /tmp/zipdeploy/26bac8a2-e59f-45e9-934c-c2838dd402d5.zip" date="2025-10-07T09:01:14.569" >
+      <step title="Writing multipart request body to /tmp/zipdeploy/26bac8a2-e59f-45e9-934c-c2838dd402d5.zip" date="2025-10-07T09:01:14.578" /><!-- duration: 20ms -->
+    </step><!-- duration: 203ms -->
+    <step title="Removing previous build artifact&apos;s manifest file" date="2025-10-07T09:01:14.780" >
+      <step title="Start deployment in the background" date="2025-10-07T09:01:14.821" >
+        <step title="Acquiring Deployment Lock" date="2025-10-07T09:01:14.886" /><!-- duration: 2ms -->
+        <step title="Acquired Deployment Lock" date="2025-10-07T09:01:15.006" /><!-- duration: 2ms -->
+      </step><!-- duration: 317ms -->
+    </step><!-- duration: 370ms -->
+    <step title="Outgoing response" date="2025-10-07T09:01:15.178" type="response" statusCode="202" statusText="Accepted" /><!-- duration: 8ms -->
+  </step><!-- duration: 687ms -->

@@ -1,0 +1,9 @@
+<step title="Incoming Request" date="2025-10-06T23:58:24.439" instance="6ac9bf" url="/api/deployments/latest" method="GET" type="request" pid="770,1,15" Accept="*/*" Host="explaina-backend.scm.azurewebsites.net" User-Agent="AZURECLI/2.77.0 (MSI)" Accept-Encoding="gzip, deflate" Authorization="Bea..." x-ms-client-request-id="527b26ad-a310-11f0-bf67-97ccbfbf3692" X-ARR-LOG-ID="527b26ad-a310-11f0-bf67-97ccbfbf3692" CLIENT-IP="41.143.149.193:61506" X-SITE-DEPLOYMENT-ID="explaina-backend" WAS-DEFAULT-HOSTNAME="explaina-backend.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/api/deployments/latest" X-Client-IP="41.143.149.193" X-Client-Port="61506" >
+  <step title="Cleanup Xml Logs" date="2025-10-06T23:58:24.443" /><!-- duration: 4ms -->
+  <step title="DeploymentService.GetResult" date="2025-10-06T23:58:24.501" >
+    <step title="DeploymentService.GetLatestDeployment" date="2025-10-06T23:58:24.507" >
+      <step title="DeploymentManager.GetResults" date="2025-10-06T23:58:24.509" /><!-- duration: 650ms -->
+    </step><!-- duration: 669ms -->
+  </step><!-- duration: 681ms -->
+  <step title="Outgoing response" date="2025-10-06T23:58:25.300" type="response" statusCode="202" statusText="Accepted" /><!-- duration: 10ms -->
+</step><!-- duration: 873ms -->

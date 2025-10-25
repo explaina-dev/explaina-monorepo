@@ -1,0 +1,34 @@
+# app.py — minimal local backend for Explaina (port 5002)
+from flask import Flask, request, jsonify, Response
+from flask_cors import CORS
+
+app = Flask(__name__)
+CORS(app)
+
+@app.get("/health")
+def health():
+    return jsonify({"status": "ok", "version": "local-5002"})
+
+@app.post("/answer")
+def answer():
+    data = request.get_json(silent=True) or {}
+    q = (data.get("question") or "").strip()
+    if not q:
+        return jsonify({"error": "missing_question"}), 400
+    return jsonify({"job_id": "demo-job-1", "status": "ready"})
+
+@app.get("/script/<job_id>")
+def script(job_id):
+    text = f"Explaina draft for job {job_id}\n\n• Summary: Example explanation\n• Steps: Example steps\n• CTA: Ask a follow-up"
+    return Response(text, mimetype="text/plain")
+
+@app.get("/audio/<job_id>")
+def audio(job_id):
+    content = f"Audio placeholder for {job_id}".encode("utf-8")
+    return Response(content, mimetype="audio/mpeg", headers={
+        "Content-Disposition": 'inline; filename="explaina-demo.mp3"'
+    })
+
+if __name__ == "__main__":
+    app.run(host="127.0.0.1", port=5002, debug=True)
+
